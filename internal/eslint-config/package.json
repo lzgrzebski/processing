@@ -1,0 +1,14 @@
+{
+    "name": "@processing/eslint-config",
+    "version": "0.1.0",
+    "main": "eslint-config.cjs",
+    "files": [
+        "eslint-config.cjs"
+    ],
+    "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.36.2",
+        "@typescript-eslint/parser": "^5.36.2",
+        "eslint": "^8.23.0",
+        "eslint-plugin-react": "^7.31.8"
+    }
+}

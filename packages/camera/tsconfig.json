@@ -1,0 +1,9 @@
+{
+    "extends": "../../tsconfig.common.json",
+    "compilerOptions": {
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "types": ["dom-webcodecs", "offscreencanvas"]
+    },
+    "include": ["./src", "./@types", "../../@types"]
+}
