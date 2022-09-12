@@ -275,7 +275,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.12.5":
+"@babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.6.2":
   version: 7.19.0
   resolution: "@babel/runtime@npm:7.19.0"
   dependencies:
@@ -348,6 +348,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@formatjs/ecma402-abstract@npm:1.12.0":
+  version: 1.12.0
+  resolution: "@formatjs/ecma402-abstract@npm:1.12.0"
+  dependencies:
+    "@formatjs/intl-localematcher": 0.2.31
+    tslib: 2.4.0
+  checksum: 29dc157d669f4fe267b850d06ae2c5a9b666a2b859ba1c99a8228bb10e9b2d7cbc19fdf0e247efed6f5100fd33333cecfb0e86315b52fad639cb137aef44b367
+  languageName: node
+  linkType: hard
+
+"@formatjs/fast-memoize@npm:1.2.6":
+  version: 1.2.6
+  resolution: "@formatjs/fast-memoize@npm:1.2.6"
+  dependencies:
+    tslib: 2.4.0
+  checksum: cdb944a9207b5d74e0b4cdcd047e32d904b52b8f893227809a906f65882a46ae8b342872161d797dffd4fafd565f91efebb18989ffe888786bb5e5d911bc0193
+  languageName: node
+  linkType: hard
+
+"@formatjs/icu-messageformat-parser@npm:2.1.7":
+  version: 2.1.7
+  resolution: "@formatjs/icu-messageformat-parser@npm:2.1.7"
+  dependencies:
+    "@formatjs/ecma402-abstract": 1.12.0
+    "@formatjs/icu-skeleton-parser": 1.3.13
+    tslib: 2.4.0
+  checksum: 4a7e7b3628852c2379bd30b540c87fd1a84d0878ddd221b7b0fbad317263626d4ba063bf1be104aa9779bad3b819cfaf41f51cda0573787bdbea7acc607025cf
+  languageName: node
+  linkType: hard
+
+"@formatjs/icu-skeleton-parser@npm:1.3.13":
+  version: 1.3.13
+  resolution: "@formatjs/icu-skeleton-parser@npm:1.3.13"
+  dependencies:
+    "@formatjs/ecma402-abstract": 1.12.0
+    tslib: 2.4.0
+  checksum: 8d52b4da2e25b1ab79300da1e7026b740467d3e66e99ae61cf7b6e890dc4a5790ee9c66944319a3f7a74d3e2807c81fa8573e7d33337311ffd9128b90d03c8c7
+  languageName: node
+  linkType: hard
+
+"@formatjs/intl-localematcher@npm:0.2.31":
+  version: 0.2.31
+  resolution: "@formatjs/intl-localematcher@npm:0.2.31"
+  dependencies:
+    tslib: 2.4.0
+  checksum: c05bf5854f04ad0cc5ad78436023805c9542d97cdf000c685793e2053b84b585be3603b370e27921a617bbb87ef021239d773bc5326ab99850786c73d46a5156
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -384,6 +433,43 @@ __metadata:
   version: 1.2.1
   resolution: "@humanwhocodes/object-schema@npm:1.2.1"
   checksum: a824a1ec31591231e4bad5787641f59e9633827d0a2eaae131a288d33c9ef0290bd16fda8da6f7c0fcb014147865d12118df10db57f27f41e20da92369fcb3f1
+  languageName: node
+  linkType: hard
+
+"@internationalized/date@npm:3.0.2-nightly.3460+5f16c3ff5":
+  version: 3.0.2-nightly.3460
+  resolution: "@internationalized/date@npm:3.0.2-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  checksum: 7f15d5c7a5c3fea3671c09ce9a6c4dbf76cd9ad9134533af2847566ec2c7393b6982c3b2e9337a45f9d652306e79a53512c2a5c0438b5fae299242c08c68cd0e
+  languageName: node
+  linkType: hard
+
+"@internationalized/message@npm:3.0.10-nightly.3460+5f16c3ff5":
+  version: 3.0.10-nightly.3460
+  resolution: "@internationalized/message@npm:3.0.10-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    intl-messageformat: ^10.1.0
+  checksum: ba6a3e889120850a37c6672a4d7abc76a3484f894bac926cab6f830d451685b18abc95605493e347fdcd44c1c97a445e760557e73f61209e9300535eabb5b0a6
+  languageName: node
+  linkType: hard
+
+"@internationalized/number@npm:3.1.2-nightly.3460+5f16c3ff5":
+  version: 3.1.2-nightly.3460
+  resolution: "@internationalized/number@npm:3.1.2-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  checksum: 67fa4e2c91fdfa6f2925f929d0379416cdb4f3275458ccfd01dbeeb6637c3f86ee8f3ac4bbe8c9ddb716a5d293e6e447d2bb5e24ab1184e7a76037076fa823c9
+  languageName: node
+  linkType: hard
+
+"@internationalized/string@npm:3.0.1-nightly.3460+5f16c3ff5":
+  version: 3.0.1-nightly.3460
+  resolution: "@internationalized/string@npm:3.0.1-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  checksum: 0ba875dc7e56a7258f2942bdba57f1a8aa2aac7769cb0c2d1302993657980a5064e795540ec111128059e64f5c3a7d3c6b6298eae36ab8782672adbf72a59a01
   languageName: node
   linkType: hard
 
@@ -518,10 +604,12 @@ __metadata:
   dependencies:
     "@processing/camera": "workspace:^"
     "@processing/eslint-config": "workspace:^"
+    "@react-aria/dnd": ^3.0.0-alpha.12
     "@types/dom-webcodecs": ^0.1.4
     "@types/offscreencanvas": ^2019.7.0
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
+    "@types/uuid": ^8.3.4
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
     "@vitejs/plugin-react": ^2.0.1
@@ -535,9 +623,230 @@ __metadata:
     react-dom: ^18.2.0
     react-error-boundary: ^3.1.4
     typescript: ^4.8.3
+    uuid: ^9.0.0
     vite: ^3.0.7
   languageName: unknown
   linkType: soft
+
+"@react-aria/dnd@npm:^3.0.0-alpha.12":
+  version: 3.0.0-nightly.3460
+  resolution: "@react-aria/dnd@npm:3.0.0-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@internationalized/string": 3.0.1-nightly.3460+5f16c3ff5
+    "@react-aria/i18n": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/interactions": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/live-announcer": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/overlays": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/visually-hidden": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-stately/dnd": 3.0.0-nightly.3460+5f16c3ff5
+    "@react-stately/selection": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/button": 3.6.2-nightly.3460+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: af744b5dbda5b639eaa8aba1920be24b9b94c402bbac41db455b554b33b0bc0282d7bd2869a359454e0f116242ea686a435bb3a54059724f8f9391d220d4330b
+  languageName: node
+  linkType: hard
+
+"@react-aria/i18n@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-aria/i18n@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@internationalized/date": 3.0.2-nightly.3460+5f16c3ff5
+    "@internationalized/message": 3.0.10-nightly.3460+5f16c3ff5
+    "@internationalized/number": 3.1.2-nightly.3460+5f16c3ff5
+    "@internationalized/string": 3.0.1-nightly.3460+5f16c3ff5
+    "@react-aria/ssr": 3.3.1-nightly.3460+5f16c3ff5
+    "@react-aria/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 03a5d003dcbacb754f485b599ad23cdca1e1ae5c596609afb6f170d1a624b2fbb81b911b2e4efc3543c1067cc9626e39d986b8115125c4a1e8c96eee0261f772
+  languageName: node
+  linkType: hard
+
+"@react-aria/interactions@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-aria/interactions@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: c280b38334fddd43401f6b70e64214243faf8bb05ddd811c83cd84f4ecfc1b2e97410ed532a4f0e341cde370200aca8a7f5e9f25f5dbf7d1fc2e7e6ec7561655
+  languageName: node
+  linkType: hard
+
+"@react-aria/live-announcer@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-aria/live-announcer@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  checksum: 10e08725d6d4fe18dfb35e98586fea1592e50987e87470bad094990343efca09abcf41533c9738c9b75fa225f19b5d0d12f278be86b21a8cafc5b64dd1c6ea39
+  languageName: node
+  linkType: hard
+
+"@react-aria/overlays@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-aria/overlays@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/i18n": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/interactions": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/ssr": 3.3.1-nightly.3460+5f16c3ff5
+    "@react-aria/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/visually-hidden": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-stately/overlays": 3.4.2-nightly.3460+5f16c3ff5
+    "@react-types/button": 3.6.2-nightly.3460+5f16c3ff5
+    "@react-types/overlays": 3.6.4-nightly.3460+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 110dce108d7548842f4b0da67172ad8a601ed47f04ed0abd0861ed60056fcf406fff9d4fb01e42b023fd5f6ade113c526a6f95bb49e2263ee5fa176dd42194db
+  languageName: node
+  linkType: hard
+
+"@react-aria/ssr@npm:3.3.1-nightly.3460+5f16c3ff5":
+  version: 3.3.1-nightly.3460
+  resolution: "@react-aria/ssr@npm:3.3.1-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 331c525143237b1326fe81f85181cf4477b627390e0529f504e5db14456acc665d66f86e2c05aa7164e6cccd2d253ffc83835709271ff40cfb6308b6daadef25
+  languageName: node
+  linkType: hard
+
+"@react-aria/utils@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-aria/utils@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/ssr": 3.3.1-nightly.3460+5f16c3ff5
+    "@react-stately/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+    clsx: ^1.1.1
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: fedfe533631629de70275eb127378533aa5b7e31cf99f1bdfb4048fa4281ba1efd4feb1e45536eb18ca42d1ac27f37945dc37d52ea36ce8a3162e3000c802b8f
+  languageName: node
+  linkType: hard
+
+"@react-aria/visually-hidden@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-aria/visually-hidden@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-aria/interactions": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-aria/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+    clsx: ^1.1.1
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 6d619e139f1550b78d90b6e4a3d1847ad71c674c68c5e9f8f8ac3f2d68f67bff31c641e54620d8e0dea33cd1e1043ee6eb5876646a4ca67f2a13585d5c47743a
+  languageName: node
+  linkType: hard
+
+"@react-stately/collections@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-stately/collections@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: f9880022793caf06521bb3c90a8400d1d4303f00258e435cfca0aefa055c1edc1b2634d04e5ef1e502b38b743a570292ffb4e9bf8e9931e4616069a7d6a808a4
+  languageName: node
+  linkType: hard
+
+"@react-stately/dnd@npm:3.0.0-nightly.3460+5f16c3ff5":
+  version: 3.0.0-nightly.3460
+  resolution: "@react-stately/dnd@npm:3.0.0-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-stately/selection": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-stately/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: a5e23d0d070a9baa01ffd216c0d6156c65f55ed2b53094f394281bcd55489c327c790d5fe9caddd13be05bd69f0263377325798e7f8c32ba16b93833ea31653c
+  languageName: node
+  linkType: hard
+
+"@react-stately/overlays@npm:3.4.2-nightly.3460+5f16c3ff5":
+  version: 3.4.2-nightly.3460
+  resolution: "@react-stately/overlays@npm:3.4.2-nightly.3460"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-stately/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/overlays": 3.6.4-nightly.3460+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 5a5a403aaf1a65a3ecc6b7b1550b3cffa13fa500fd52f65fb4e232021c36c6fde78831448ca3e69ae1d2d88d196937e59a982ad2775457e16c0152705071aa76
+  languageName: node
+  linkType: hard
+
+"@react-stately/selection@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-stately/selection@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+    "@react-stately/collections": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-stately/utils": 3.0.0-nightly.1760+5f16c3ff5
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: f8d6de1eb6409e6f903a4871e52b6b69d4c055a942f3a9989967c548ba793904cadb8c3f50bdc797742a4f1020fe0c288a3b6a678c87ae92689f3a53da57a2eb
+  languageName: node
+  linkType: hard
+
+"@react-stately/utils@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-stately/utils@npm:3.0.0-nightly.1760"
+  dependencies:
+    "@babel/runtime": ^7.6.2
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: da60ec85fe4d012865dd52804032be7cc0714a45becf443aa3b03c804229b9e83ce4e39b1e15af1e11237465590cf9bc9afd902dd71e65126b595d503196b6d3
+  languageName: node
+  linkType: hard
+
+"@react-types/button@npm:3.6.2-nightly.3460+5f16c3ff5":
+  version: 3.6.2-nightly.3460
+  resolution: "@react-types/button@npm:3.6.2-nightly.3460"
+  dependencies:
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: b05d1912dbfe408335c3da5014ef05695a8bfadfc74e0fb09b5f5421086cea68334c6779e198b36451a12fdb9bd00d0535c622a238ab42d25c82983f40dcbcc6
+  languageName: node
+  linkType: hard
+
+"@react-types/overlays@npm:3.6.4-nightly.3460+5f16c3ff5":
+  version: 3.6.4-nightly.3460
+  resolution: "@react-types/overlays@npm:3.6.4-nightly.3460"
+  dependencies:
+    "@react-types/shared": 3.0.0-nightly.1760+5f16c3ff5
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 0b6937798e4f5efe0b8ffd27336830141be066ed265f55d0c5b8004389706de992bc9a1503bbb9d4913d8ccc695d4eb84ae2700082bf3b40a3b0c15bdd921734
+  languageName: node
+  linkType: hard
+
+"@react-types/shared@npm:3.0.0-nightly.1760+5f16c3ff5":
+  version: 3.0.0-nightly.1760
+  resolution: "@react-types/shared@npm:3.0.0-nightly.1760"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
+  checksum: 881734fed5fa27e0478a2d176ecec0ed005439f67672aea3690d71c5f8fb40dc724a41c804c9349f8f74f9a8a27fe77f8a59fb204d12941790bad5f9dc2f34c7
+  languageName: node
+  linkType: hard
 
 "@tootallnate/once@npm:2":
   version: 2.0.0
@@ -598,6 +907,13 @@ __metadata:
   version: 0.16.2
   resolution: "@types/scheduler@npm:0.16.2"
   checksum: b6b4dcfeae6deba2e06a70941860fb1435730576d3689225a421280b7742318d1548b3d22c1f66ab68e414f346a9542f29240bc955b6332c5b11e561077583bc
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:^8.3.4":
+  version: 8.3.4
+  resolution: "@types/uuid@npm:8.3.4"
+  checksum: 6f11f3ff70f30210edaa8071422d405e9c1d4e53abbe50fdce365150d3c698fe7bbff65c1e71ae080cbfb8fded860dbb5e174da96fdbbdfcaa3fb3daa474d20f
   languageName: node
   linkType: hard
 
@@ -1033,6 +1349,13 @@ __metadata:
   version: 2.2.0
   resolution: "clean-stack@npm:2.2.0"
   checksum: 2ac8cd2b2f5ec986a3c743935ec85b07bc174d5421a5efc8017e1f146a1cf5f781ae962618f416352103b32c9cd7e203276e8c28241bbe946160cab16149fb68
+  languageName: node
+  linkType: hard
+
+"clsx@npm:^1.1.1":
+  version: 1.2.1
+  resolution: "clsx@npm:1.2.1"
+  checksum: 30befca8019b2eb7dbad38cff6266cf543091dae2825c856a62a8ccf2c3ab9c2907c4d12b288b73101196767f66812365400a227581484a05f968b0307cfaf12
   languageName: node
   linkType: hard
 
@@ -2146,6 +2469,18 @@ __metadata:
     has: ^1.0.3
     side-channel: ^1.0.4
   checksum: 1944f92e981e47aebc98a88ff0db579fd90543d937806104d0b96557b10c1f170c51fb777b97740a8b6ddeec585fca8c39ae99fd08a8e058dfc8ab70937238bf
+  languageName: node
+  linkType: hard
+
+"intl-messageformat@npm:^10.1.0":
+  version: 10.1.4
+  resolution: "intl-messageformat@npm:10.1.4"
+  dependencies:
+    "@formatjs/ecma402-abstract": 1.12.0
+    "@formatjs/fast-memoize": 1.2.6
+    "@formatjs/icu-messageformat-parser": 2.1.7
+    tslib: 2.4.0
+  checksum: 09c2cba0d64b9b9c99b9630b3f32661dd25886461eea5e8b6e0dac6b13b8ab0eb8bf2646bc73baa8b47501544f6cdb255d888617e22d056cce686849e05e2699
   languageName: node
   linkType: hard
 
@@ -3422,6 +3757,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.4.0":
+  version: 2.4.0
+  resolution: "tslib@npm:2.4.0"
+  checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
@@ -3684,6 +4026,15 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "uuid@npm:9.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 8dd2c83c43ddc7e1c71e36b60aea40030a6505139af6bee0f382ebcd1a56f6cd3028f7f06ffb07f8cf6ced320b76aea275284b224b002b289f89fe89c389b028
   languageName: node
   linkType: hard
 

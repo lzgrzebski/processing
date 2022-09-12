@@ -1,71 +1,23 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
+import { v4 as uuid } from 'uuid';
 
-import {
-    createVideoTrackProcessor,
-    bwTransformer,
-    floydSteinbergDitheringTransformer,
-    redTransformer,
-    isVideoTrack,
-    stopMediaStream,
-} from '@processing/camera';
+import { createVideoTrackProcessor, isVideoTrack } from '@processing/camera';
+import { useMedia } from './hooks/useMedia';
+import { DEFAULT_PROPS } from './constants';
+import { Filter, TRANSFORMERS } from './types';
+import { Filters } from './views/Filters.view';
 
-const DEFAULT_PROPS = {
-    height: 480,
-    width: 640,
-};
-
-const TRANSFORMERS = {
-    bw: bwTransformer,
-    floydSteinbergDithering: floydSteinbergDitheringTransformer,
-    red: redTransformer,
-} as const;
-
-interface Filter {
-    active: boolean;
-    id: keyof typeof TRANSFORMERS;
-    position: number;
-}
-
-const FILTERS = Object.entries(TRANSFORMERS).map(([id], position) => ({
+const FILTERS = Object.entries(TRANSFORMERS).map(([transformerType]) => ({
     active: false,
-    id,
-    position,
+    canRemove: false,
+    id: uuid(),
+    transformerType,
 })) as Filter[];
-
-const sortFilters = (filters: Filter[]) =>
-    [...filters].sort((a, b) => a.position - b.position);
-
-export const useMedia = () => {
-    const [mediaStream, setMediaStream] = useState<MediaStream>();
-
-    useEffect(() => {
-        const getMedia = async () => {
-            try {
-                const stream = await navigator.mediaDevices.getUserMedia({
-                    video: DEFAULT_PROPS,
-                });
-                setMediaStream(stream);
-            } catch (reason) {
-                console.error(reason);
-            }
-        };
-
-        if (!mediaStream) {
-            getMedia();
-        } else {
-            return () => {
-                stopMediaStream(mediaStream);
-            };
-        }
-    }, [mediaStream]);
-
-    return mediaStream;
-};
 
 const Processing = () => {
     const videoRef = useRef<HTMLVideoElement | null>(null);
-    const [filters, setFilters] = useState(() => sortFilters(FILTERS));
+    const [filters, setFilters] = useState(FILTERS);
 
     const rawStream = useMedia();
 
@@ -82,7 +34,9 @@ const Processing = () => {
                 track,
                 filters
                     .filter(({ active }) => active)
-                    .map(({ id }) => TRANSFORMERS[id]()),
+                    .map(({ transformerType }) =>
+                        TRANSFORMERS[transformerType]()
+                    ),
                 DEFAULT_PROPS
             );
             if (videoRef.current) {
@@ -108,48 +62,7 @@ const Processing = () => {
                     width: '100vw',
                 }}
             />
-            <div
-                style={{
-                    backgroundColor: '#fff',
-                    left: 0,
-                    position: 'fixed',
-                    top: 0,
-                    zIndex: 1,
-                }}
-            >
-                {filters.map((filter) => (
-                    <div key={filter.position}>
-                        <input
-                            checked={filter.active}
-                            onChange={() => {
-                                setFilters((prevFilters) =>
-                                    prevFilters.map((prev) => {
-                                        if (prev.position !== filter.position) {
-                                            return prev;
-                                        }
-                                        return {
-                                            ...prev,
-                                            active: !prev.active,
-                                        };
-                                    })
-                                );
-                            }}
-                            type="checkbox"
-                        />{' '}
-                        <span>{filter.id}</span>
-                        <button
-                            onClick={() => {
-                                setFilters((prev) => [
-                                    ...prev,
-                                    { ...filter, position: filters.length },
-                                ]);
-                            }}
-                        >
-                            +
-                        </button>
-                    </div>
-                ))}
-            </div>
+            <Filters filters={filters} setFilters={setFilters} />
         </>
     );
 };
