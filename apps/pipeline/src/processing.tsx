@@ -28,9 +28,10 @@ const Processing = () => {
     const rawStream = useMedia();
 
     useEffect(() => {
-        if (!rawStream) {
+        if (!rawStream || !rawStream.active) {
             return;
         }
+
         let stream;
         let cancel: () => void | undefined;
 
