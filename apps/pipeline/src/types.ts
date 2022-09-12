@@ -1,18 +1,7 @@
-import {
-    bwTransformer,
-    floydSteinbergDitheringTransformer,
-    redTransformer,
-} from '@processing/camera';
-
-export const TRANSFORMERS = {
-    bw: bwTransformer,
-    floydSteinbergDithering: floydSteinbergDitheringTransformer,
-    red: redTransformer,
-} as const;
-
+import { Transformers } from '@processing/camera';
 export interface Filter {
     active: boolean;
-    transformerType: keyof typeof TRANSFORMERS;
+    transformerType: Transformers;
     id: string;
     canRemove: boolean;
 }

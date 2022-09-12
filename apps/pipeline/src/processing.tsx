@@ -2,13 +2,19 @@ import React, { useRef, useEffect, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { v4 as uuid } from 'uuid';
 
-import { createVideoTrackProcessor, isVideoTrack } from '@processing/camera';
-import { useMedia } from './hooks/useMedia';
-import { DEFAULT_PROPS } from './constants';
-import { Filter, TRANSFORMERS } from './types';
-import { Filters } from './views/Filters.view';
+import {
+    createVideoTrackProcessor,
+    getTransformer,
+    isVideoTrack,
+    TRANSFORMERS,
+} from '@processing/camera';
 
-const FILTERS = Object.entries(TRANSFORMERS).map(([transformerType]) => ({
+import { DEFAULT_PROPS } from './constants';
+import { Filter } from './types';
+import { Filters } from './views/Filters.view';
+import { useMedia } from './hooks/useMedia';
+
+const FILTERS = TRANSFORMERS.map((transformerType) => ({
     active: false,
     canRemove: false,
     id: uuid(),
@@ -35,7 +41,7 @@ const Processing = () => {
                 filters
                     .filter(({ active }) => active)
                     .map(({ transformerType }) =>
-                        TRANSFORMERS[transformerType]()
+                        getTransformer(transformerType)()
                     ),
                 DEFAULT_PROPS
             );
