@@ -139,3 +139,5 @@ const MediaStreamTrackGenerator: {
             | MediaStreamVideoTrackGeneratorInit
     ): never;
 };
+
+declare module '*.mp4';

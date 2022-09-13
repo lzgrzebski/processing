@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import { Processing } from './processing';
+import { Processing } from './processing/Processing';
 
 import 'normalize.css';
 import './index.css';

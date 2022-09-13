@@ -1,0 +1,10 @@
+.label {
+    display: flex;
+    overflow: hidden;
+    flex: 1 1;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 5px;
+}

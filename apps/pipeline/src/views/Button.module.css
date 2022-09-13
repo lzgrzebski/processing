@@ -1,0 +1,15 @@
+.button {
+    border-radius: 8px;
+    font-weight: bold;
+
+    transition: opacity 0.3s;
+    opacity: 0.5;
+    border: 1px solid;
+
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.button:hover {
+    opacity: 1;
+}

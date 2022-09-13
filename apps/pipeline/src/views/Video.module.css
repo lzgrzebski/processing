@@ -1,0 +1,6 @@
+.video {
+    display: block;
+    height: 100vh;
+    object-fit: cover;
+    width: 100vw;
+}
