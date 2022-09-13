@@ -7,7 +7,8 @@
         "lint": "TIMING=1 run -T eslint --ext .js,.ts,.tsx --report-unused-disable-directives .",
         "clean": "rm -rf ./dist",
         "tsc": "tsc --noEmit",
-        "dev": "tsc -w"
+        "dev": "tsc -w",
+        "test": "jest"
     },
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -28,11 +29,14 @@
     "devDependencies": {
         "@processing/eslint-config": "workspace:^",
         "@types/dom-webcodecs": "^0.1.4",
+        "@types/jest": "^29.0.1",
         "@types/offscreencanvas": "^2019.7.0",
         "@typescript-eslint/eslint-plugin": "latest",
         "@typescript-eslint/parser": "latest",
         "eslint": "latest",
         "eslint-plugin-react": "latest",
+        "jest": "^29.0.3",
+        "ts-jest": "^29.0.0",
         "typescript": "^4.8.3"
     },
     "packageManager": "yarn@3.2.3"

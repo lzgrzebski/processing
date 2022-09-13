@@ -1,6 +1,6 @@
 import { createCanvasTransformer } from './canvasTransformer';
 
-const floydSteinbergDitheringFilter = (
+export const floydSteinbergDitheringFilter = (
     imageData: ImageData,
     width: number,
     height: number

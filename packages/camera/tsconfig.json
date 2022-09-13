@@ -3,7 +3,7 @@
     "compilerOptions": {
         "rootDir": "./src",
         "outDir": "./dist",
-        "types": ["dom-webcodecs", "offscreencanvas"]
+        "types": ["dom-webcodecs", "offscreencanvas", "jest"]
     },
     "include": ["./src", "./@types", "../../@types"]
 }
