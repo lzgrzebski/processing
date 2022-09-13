@@ -1010,6 +1010,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@playwright/test@npm:^1.25.2":
+  version: 1.25.2
+  resolution: "@playwright/test@npm:1.25.2"
+  dependencies:
+    "@types/node": "*"
+    playwright-core: 1.25.2
+  bin:
+    playwright: cli.js
+  checksum: 3c24027bd9b305a3985cae35a4046e656dd0ffb76ef4dfcfc864f6c8492a643fc21c79048ee8169c5c1562d3cae493e7223a5473b127fef3bda7c7c52795c17d
+  languageName: node
+  linkType: hard
+
 "@processing/camera@workspace:^, @processing/camera@workspace:packages/camera":
   version: 0.0.0-use.local
   resolution: "@processing/camera@workspace:packages/camera"
@@ -1043,10 +1055,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@processing/pipeline@workspace:apps/pipeline"
   dependencies:
+    "@playwright/test": ^1.25.2
     "@processing/camera": "workspace:^"
     "@processing/eslint-config": "workspace:^"
     "@react-aria/dnd": ^3.0.0-alpha.12
     "@types/dom-webcodecs": ^0.1.4
+    "@types/node": ^18.7.17
     "@types/offscreencanvas": ^2019.7.0
     "@types/react": ^18.0.17
     "@types/react-dom": ^18.0.6
@@ -1059,6 +1073,7 @@ __metadata:
     eslint: latest
     eslint-plugin-react: latest
     normalize.css: ^8.0.1
+    playwright: ^1.25.2
     postcss: ^8.4.16
     prettier: ^2.7.1
     react: ^18.2.0
@@ -2790,7 +2805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^18.7.17":
   version: 18.7.17
   resolution: "@types/node@npm:18.7.17"
   checksum: bb1b832f4ad42a106d189d87e95aef117f0026a7ea291f34c5d106a25419d6d4c9d39099688ad46746cc3c2307c263be4adec1049a35dc12c9e48f19975b2dc6
@@ -6201,6 +6216,26 @@ __metadata:
   dependencies:
     find-up: ^4.0.0
   checksum: 9863e3f35132bf99ae1636d31ff1e1e3501251d480336edb1c211133c8d58906bed80f154a1d723652df1fda91e01c7442c2eeaf9dc83157c7ae89087e43c8d6
+  languageName: node
+  linkType: hard
+
+"playwright-core@npm:1.25.2":
+  version: 1.25.2
+  resolution: "playwright-core@npm:1.25.2"
+  bin:
+    playwright: cli.js
+  checksum: 24ada61e2132bd7278cf0aa0ef711280e1519c437efa0088a99c47ef994202f4c9880521d8c0c51ab854bef08806f372477d754aac1e790ea64f18cd346b5b2f
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.25.2":
+  version: 1.25.2
+  resolution: "playwright@npm:1.25.2"
+  dependencies:
+    playwright-core: 1.25.2
+  bin:
+    playwright: cli.js
+  checksum: e500b45c2961140fdae665331d357ecf1cc308041e0fd8e6765b4da2195600a8a358d3e723bac6215bd9135979f7e7a350cdb1347f6cefa3773e85aa262ce879
   languageName: node
   linkType: hard
 
