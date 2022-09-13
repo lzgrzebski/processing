@@ -6,6 +6,6 @@
         "noEmit": true,
         "types": ["vite/client", "dom-webcodecs", "offscreencanvas", "node"]
     },
-    "include": ["src", "playwright.config.ts", "./@types", "../../@types"],
+    "include": ["src", "./@types", "../../@types"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
